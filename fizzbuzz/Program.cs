@@ -6,7 +6,7 @@ namespace FizzBuzz
         static void Main(string[] args) {
             while(true) {
                 Console.Write("Input number: ");
-                String line = Console.ReadLine();
+                String? line = Console.ReadLine();
                 if(line == "quit" || line == "q") {
                     break;
                 }
