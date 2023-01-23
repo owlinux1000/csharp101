@@ -1,8 +1,14 @@
 ﻿namespace FakeDll {
     public class FakeDll
     {
-        public static string hoge() {
-            return "Fakedll's hoge method is called";
+        public FakeDll() {
+            System.Console.WriteLine("FakeDll constructor is executed");
+        }
+        public FakeDll(string message) {
+            System.Console.WriteLine(message);
+        }
+        public void MethodSample(string message) {
+            System.Console.WriteLine($"MethodSample is called: {message}");
         }
     }
 }
